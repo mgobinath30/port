@@ -1,6 +1,5 @@
 app = angular.module('app', ['ngRoute', 'ngAnimate']);
-app.config(function($routeProvider, $locationProvider){
-
+app.config(function($routeProvider, $locationProvider) {
   $routeProvider
   .when('/potterpics',{
     templateUrl: "../pages/potter.html"
@@ -33,7 +32,7 @@ app.config(function($routeProvider, $locationProvider){
     templateUrl: "../pages/vaporposter.html"
   })
   .when('/interaction',{
-    templateUrl: "../pages/arweather.html"
+    templateUrl: "../pages/interactions.html"
   })
   .when('/photogram',{
     templateUrl: "../pages/photogram.html"
@@ -48,7 +47,6 @@ app.config(function($routeProvider, $locationProvider){
    templateUrl: "../pages/grid.html"
   })
   .otherwise({redirectTo: '/'});
-
 }).animation('.reveal-animation', function() {
   return {
     enter: function(element, done) {
