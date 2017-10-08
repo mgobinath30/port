@@ -139,29 +139,30 @@ body {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     background: #000;
     border-radius: 50%;
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 50px;
 }
+
 .btn {
     font-family: sfuiboldRegular;
 }
 
 p.home-center.text {
-  font-weight: bold;
-  font-size: 1.25em;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 .home-text {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.25em;
-  font-family: sfuiboldHeavy;
-  margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.25em;
+    font-family: sfuiboldHeavy;
+    margin-bottom: 50px;
 }
 
 a.black-circle {
@@ -182,6 +183,7 @@ a.black-circle:focus {
     color: #000;
     outline: none;
 }
+
 
 /* Common Styles */
 
@@ -323,6 +325,9 @@ section .fadeIn {
 
 /* Media Query Responsive Handle Section */
 
+.grid-himage {
+    display: none !important;
+}
 @media screen and (max-width: 650px) {
     .logo {
         position: absolute;
@@ -335,6 +340,15 @@ section .fadeIn {
     }
     video {
         max-height: 500px;
+    }
+    .grid-hvideo {
+        display: none !important;
+    }
+    .grid-himage {
+        display: block !important;
+    }
+    button.btn.btn-default {
+        font-size: 1em;
     }
 }
 
