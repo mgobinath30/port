@@ -473,6 +473,12 @@ p.videotitle {
     padding: 10px 0px;
 }
 
+p.imagetitle {
+  font-family: sfuiboldRegular;
+  font-size: 0.8em;
+  text-align: center;
+}
+
 .margintop100 {
     margin-top: 100px;
 }
